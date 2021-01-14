@@ -1,0 +1,81 @@
+!SESSION 2021-01-13 21:40:07.493 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/danielsaneel/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/danielsaneel/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2021-01-13 21:42:28.983
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2021-01-13 21:42:32.891
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.TaskList.
+
+!ENTRY com.yattasolutions.umllab 4 0 2021-01-13 21:42:41.672
+!MESSAGE UML Lab internal error: Integrity of licensing plug-in could not be verified
+!STACK 0
+com.yattasolutions.obf.kl.a: License could not be verified
+	at com.yattasolutions.obf.mt.f.checkIntegrity(SourceFile:208)
+	at com.yattasolutions.obf.mt.f.anQ(SourceFile:110)
+	at com.yattasolutions.obf.mt.f.aod(SourceFile:1)
+	at com.yattasolutions.obf.mt.i.afc(SourceFile:209)
+	at com.yattasolutions.obf.mt.f.dr(SourceFile:406)
+	at com.yattasolutions.obf.mt.d.dr(SourceFile:209)
+	at com.yattasolutions.obf.oe.a.earlyStartup(SourceFile:32)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$41.run(Workbench.java:2729)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.security.cert.CertificateExpiredException: NotAfter: Wed Jun 24 05:00:00 PDT 2020
+	at sun.security.x509.CertificateValidity.valid(CertificateValidity.java:274)
+	at sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:629)
+	at sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:602)
+	at com.yattasolutions.obf.mt.f.checkIntegrity(SourceFile:202)
+	... 11 more
+
+!ENTRY com.yattasolutions.umllab 4 0 2021-01-13 21:42:41.709
+!MESSAGE UML Lab internal error: Integrity of licensing plug-in could not be verified
+!STACK 0
+com.yattasolutions.obf.kl.a: License could not be verified
+	at com.yattasolutions.obf.mt.f.checkIntegrity(SourceFile:208)
+	at com.yattasolutions.obf.mt.f.anQ(SourceFile:110)
+	at com.yattasolutions.obf.mt.f.aod(SourceFile:1)
+	at com.yattasolutions.obf.mt.i.afc(SourceFile:209)
+	at com.yattasolutions.obf.mt.f.dr(SourceFile:406)
+	at com.yattasolutions.obf.mt.d.dr(SourceFile:209)
+	at com.yattasolutions.obf.mt.f.dq(SourceFile:387)
+	at com.yattasolutions.obf.mt.d.dq(SourceFile:191)
+	at com.yattasolutions.obf.oe.a.a(SourceFile:46)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4145)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3812)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:660)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.security.cert.CertificateExpiredException: NotAfter: Wed Jun 24 05:00:00 PDT 2020
+	at sun.security.x509.CertificateValidity.valid(CertificateValidity.java:274)
+	at sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:629)
+	at sun.security.x509.X509CertImpl.checkValidity(X509CertImpl.java:602)
+	at com.yattasolutions.obf.mt.f.checkIntegrity(SourceFile:202)
+	... 33 more
